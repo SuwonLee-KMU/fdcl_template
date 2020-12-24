@@ -1,0 +1,55 @@
+\documentclass{fdclreport}
+\usepackage{lipsum}     % dummy text
+\usepackage{cite}       % citation
+\usepackage{pgfgantt}   % gantt chart
+
+\project{(국방 GNC) 항공발사 유도무기의 LAR 개선방안 연구}
+\title{LIG-LAR-201224-R0-이수원}
+\author{이수원 (박사과정 4년차)}
+\recipient{김유단 교수님}
+\date{\today}
+\reportnumber{0}
+
+\begin{document}
+\maketitle
+\section{연구목표 및 일정}
+\subsection{연구목표}
+\subsection{연구일정}
+    \begin{center}
+    \begin{ganttchart}[
+    vgrid={*1{draw=black!5, line width=.75pt}}]
+    {1}{26}
+        % Months
+        \gantttitle{2020년}{2}
+        \gantttitle{2021년}{24} \\
+        \gantttitlelist{12}{2}
+        \gantttitlelist{1,...,12}{2} \\
+        % Contents
+        \ganttmilestone{Today}{2}\\
+        \ganttbar{기초자료조사}{1}{6} \\
+        \ganttbar{비행제어 기법 연구}{6}{10} \\
+        \ganttbar{제어기법 시뮬레이션}{10}{20} \\
+        \ganttbar{연차보고서 작성}{20}{26}
+        \ganttlink{elem1}{elem2}
+        \ganttlink{elem2}{elem3}
+        \ganttlink{elem3}{elem4}
+    \end{ganttchart}
+    \end{center}
+
+\section{연구수행내용 요약}
+
+\section{기타 논의 사항}
+
+\section{향후 연구내용}
+
+\makedetailedcontents
+
+\section{Introduction}
+\lipsum[1-1]
+Citation example \cite{lee2020vector}.
+\section{Conclusion}
+\lipsum[2-2]
+
+\bibliographystyle{ieeetr}
+\bibliography{references}
+\end{document}

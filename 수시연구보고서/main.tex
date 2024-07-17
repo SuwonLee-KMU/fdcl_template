@@ -1,0 +1,76 @@
+\documentclass[11pt,twoside]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{paperlighter}
+
+% Recommended, but optional, packages for figures and better typesetting:
+% \usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{booktabs} % for professional tables
+
+% Attempt to make hyperref and algorithmic work together better:
+% \newcommand{\theHalgorithm}{\arabic{algorithm}}
+
+
+% For theorems and such
+% \usepackage[numbers]{natbib}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{kotex}
+
+% if you use cleveref..
+% \usepackage[capitalize,noabbrev]{cleveref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% THEOREMS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+% Todonotes is useful during development; simply uncomment the next line
+%    and comment out the line below the next line to turn off comments
+%\usepackage[disable,textsize=tiny]{todonotes}
+\usepackage[textsize=tiny]{todonotes}
+
+
+
+\slimtitle{A Report on: 3D Detour Generating Algorithm using Offset Curves}
+\slimauthor{Suwon Lee}
+
+
+\begin{document}
+
+\lightertitle{A Report on: 3D Detour Generating Algorithm using Offset Curves}
+
+\lighterauthor{Suwon Lee$^{\dagger}$}
+
+\lighteraddress{$^\dagger$}{Assistant Professor, Kookmin University, Seoul, Republic of Korea}
+
+
+\lighteremail{suwon.lee@kookmin.ac.kr}
+
+
+\input{content/abstract}
+Citation example \cite{langley00}
+\input{content/others}
+
+
+\bibliographystyle{unsrt}
+\bibliography{ref}
+
+\newpage
+\appendix
+\input{content/appendix}
+
+\end{document}
